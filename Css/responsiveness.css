@@ -1,0 +1,53 @@
+/*----------------------------
+Device responsiveness
+-----------------------------*/
+
+/*-----------------------------
+Widths
+-----------------------------*/
+
+/*---------------------------
+1000px
+----------------------------*/
+
+@media only screen and (min-width: 1000px){
+    .row1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #lay1 {
+        transform: rotate(-90deg);
+        margin-top: 110px;
+        height: fit-content;
+    }
+
+    .row3 img {
+        width: 350px;
+        margin-right: 50px;
+    }
+
+    .row3 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .row3 div:nth-child(2) {
+        margin-top: 0px;
+    }
+
+    .box span {
+        -webkit-box-reflect: below 0px linear-gradient(transparent,#0004);
+    } 
+}
+
+@media only screen and (max-width: 768px){
+    
+    .animation {
+        min-height: 100vh;
+    }
+
+    .box span {
+        transform: rotateY(calc(var(--i) * 90deg)) translateZ(100px);
+    }    
+}
